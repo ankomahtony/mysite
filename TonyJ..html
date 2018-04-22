@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:5000/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TonyJ.</title>
+	<!--<link href="/static/css/bootstrap.min.css" rel="stylesheet">-->
+	<link href="./TonyJ._files/styles.css" rel="stylesheet">
+	<!--<link href="/static/css/index1.css" rel="stylesheet">-->
+	<!--<link href="/static/css/dygraph.css" rel="stylesheet">-->
+	<!--<link href="/static/fonts/font-awesome.min.css"  rel="stylesheet">-->
+	<script src="./TonyJ._files/dygraph.min.js.download"></script>
+	<script src="./TonyJ._files/dygraph.js.download"></script>
+	<script src="./TonyJ._files/d3_v3.min.js.download"></script>
+	<script src="./TonyJ._files/d3_v3.js.download"></script>
+	<!--<script src="/static/js/d3div.js"></script>-->
+
+	<style>
+		.dyStatsLegend{
+		color: silver !important;
+		background: rgba(255,255,255,0.1) !important;
+		}
+	</style>
+</head>
+
+<body>
+
+<header>
+	<img src="./TonyJ._files/logo2.png" alt="Creative inc. logo" class="logo">
+	<nav>
+		<ul>
+			<li><a href="http://localhost:5000/">Home</a></li>
+			<li><a href="http://localhost:5000/location/">About</a></li>
+			<li><a href="http://localhost:5000/d3html/">Contact</a></li>
+			<li><a href="http://localhost:5000/signing/">My Account</a></li>
+		</ul>
+	</nav>
+</header>
+
+<section class="home-hero parallax--bg" style="background-image: url(&quot;/static/images/bg.jpg&quot;); background-position: center 2118.75px;">
+	<div class="col-3" style="color: blue;">
+	<div class="only-4-pc" style="display:none;">
+		<center>
+			<h1 class="head-title">Visualising Your Data</h1>
+			<p class="head-note">Done by TonyJ</p>
+			<a class="prty-btn prty-btn-blue" href="http://localhost:5000/#dygraph2" id="J_load" onclick="ga(&#39;send&#39;,&#39;event&#39;,&#39;Androidx86&#39;,&#39;ClickDownloadFromFirstScreen&#39;)">View Now</a>
+		</center>
+	</div>
+	</div>
+	<div class="col-3" style="color: orange;">
+		<h1 class="title parallax--box" style="top: 9.125em;">Making Data more <span>Understandable for companies</span>
+		</h1>
+		<a href="http://localhost:5000/" class="button button-accent" style="color: red;">See Our Work</a>
+	</div>
+</section>
+
+<div class="containners">
+	<section class="home-about" style="background-image: url(&#39;/static/images/img/who-we-are.jpeg&#39;)">
+
+		<div class="home-about-textbox parallax--box" style="top: 9.125em;">
+			<h1>Who we are</h1>
+			<p>Sit by the fire drink water out of the faucet hide head under blanket so no one can see cat is love, cat is life. Knock dish off table eating always hungry so favor packaging over toy. </p>
+			<p><strong>Rub face on owner.</strong> Peer out window, chatter at birds, lure them to mouth. Chase ball of string eat a plant, kill a hand, i am the best have secret plans.</p>
+		</div>
+
+	</section>
+</div>
+<br>
+<br>
+<div class="container">
+	<h2>D3 Visualization Graphs</h2>
+	<div id="d3_div1"><svg width="1000" height="500"><g id="xAxisG"><g class="tick" transform="translate(20,0)" style="opacity: 1;"><line y2="480" x2="0"></line><text dy=".71em" y="483" x="0" style="text-anchor: middle;">1</text></g><g class="tick" transform="translate(68.42105263157895,0)" style="opacity: 1;"><line y2="480" x2="0"></line><text dy=".71em" y="483" x="0" style="text-anchor: middle;">2</text></g><g class="tick" transform="translate(116.84210526315789,0)" style="opacity: 1;"><line y2="480" x2="0"></line><text dy=".71em" y="483" x="0" style="text-anchor: middle;">3</text></g><g class="tick" transform="translate(165.26315789473682,0)" style="opacity: 1;"><line y2="480" x2="0"></line><text dy=".71em" y="483" x="0" style="text-anchor: middle;">4</text></g><g class="tick" transform="translate(213.68421052631578,0)" style="opacity: 1;"><line y2="480" x2="0"></line><text dy=".71em" y="483" x="0" style="text-anchor: middle;">5</text></g><g class="tick" transform="translate(262.10526315789474,0)" style="opacity: 1;"><line y2="480" x2="0"></line><text dy=".71em" y="483" x="0" style="text-anchor: middle;">6</text></g><g class="tick" transform="translate(310.52631578947364,0)" style="opacity: 1;"><line y2="480" x2="0"></line><text dy=".71em" y="483" x="0" style="text-anchor: middle;">7</text></g><g class="tick" transform="translate(358.9473684210526,0)" style="opacity: 1;"><line y2="480" x2="0"></line><text dy=".71em" y="483" x="0" style="text-anchor: middle;">8</text></g><g class="tick" transform="translate(407.36842105263156,0)" style="opacity: 1;"><line y2="480" x2="0"></line><text dy=".71em" y="483" x="0" style="text-anchor: middle;">9</text></g><g class="tick" transform="translate(455.78947368421046,0)" style="opacity: 1;"><line y2="480" x2="0"></line><text dy=".71em" y="483" x="0" style="text-anchor: middle;">10</text></g><path class="domain" d="M20,480V0H480V480"></path></g><rect width="50" height="300" x="20" y="150" style="fill: blue; stroke: red; stroke-width: 1px; opacity: 0.25;"></rect><rect width="50" height="400" x="80" y="50" style="fill: blue; stroke: red; stroke-width: 1px; opacity: 0.25;"></rect><rect width="50" height="200" x="140" y="250" style="fill: blue; stroke: red; stroke-width: 1px; opacity: 0.25;"></rect><rect width="50" height="100" x="200" y="350" style="fill: blue; stroke: red; stroke-width: 1px; opacity: 0.25;"></rect><circle r="20" cx="953.4811529933481" cy="20" style="fill: rgb(153, 0, 0); stroke: black; stroke-width: 1px;"></circle><circle r="5.75" cx="966.2305986696231" cy="365" style="fill: rgb(230, 191, 191); stroke: black; stroke-width: 1px;"></circle><circle r="10.5" cx="980" cy="250" style="fill: rgb(204, 128, 128); stroke: black; stroke-width: 1px;"></circle><circle r="1" cx="520" cy="480" style="fill: rgb(255, 255, 255); stroke: black; stroke-width: 1px;"></circle><circle r="1" cx="521.529933481153" cy="480" style="fill: rgb(255, 255, 255); stroke: black; stroke-width: 1px;"></circle><circle r="1" cx="533.7694013303769" cy="480" style="fill: rgb(255, 255, 255); stroke: black; stroke-width: 1px;"></circle><circle r="15.25" cx="542.949002217295" cy="135" style="fill: rgb(179, 64, 64); stroke: black; stroke-width: 1px;"></circle><circle r="5.75" cx="858.1152993348115" cy="365" style="fill: rgb(230, 191, 191); stroke: black; stroke-width: 1px;"></circle><circle r="5.75" cx="900.9534368070954" cy="365" style="fill: rgb(230, 191, 191); stroke: black; stroke-width: 1px;"></circle><circle r="15.25" cx="634.7450110864745" cy="135" style="fill: rgb(179, 64, 64); stroke: black; stroke-width: 1px;"></circle><line x1="400" y1="0" x2="400" y2="600" style="stroke: lightgray; stroke-width: 5px;"></line></svg></div>
+	<div id="d3_div2"><svg width="1060" height="500"><g transform="translate(470,0)" id="yAxisG"><g class="tick" transform="translate(0,480)" style="opacity: 1;"><line x2="-470" y2="0"></line><text dy=".32em" x="3" y="0" style="text-anchor: start;">0</text></g><g class="tick" transform="translate(0,434)" style="opacity: 1;"><line x2="-470" y2="0"></line><text dy=".32em" x="3" y="0" style="text-anchor: start;">10</text></g><g class="tick" transform="translate(0,388)" style="opacity: 1;"><line x2="-470" y2="0"></line><text dy=".32em" x="3" y="0" style="text-anchor: start;">20</text></g><g class="tick" transform="translate(0,342)" style="opacity: 1;"><line x2="-470" y2="0"></line><text dy=".32em" x="3" y="0" style="text-anchor: start;">30</text></g><g class="tick" transform="translate(0,296)" style="opacity: 1;"><line x2="-470" y2="0"></line><text dy=".32em" x="3" y="0" style="text-anchor: start;">40</text></g><g class="tick" transform="translate(0,250)" style="opacity: 1;"><line x2="-470" y2="0"></line><text dy=".32em" x="3" y="0" style="text-anchor: start;">50</text></g><g class="tick" transform="translate(0,204)" style="opacity: 1;"><line x2="-470" y2="0"></line><text dy=".32em" x="3" y="0" style="text-anchor: start;">60</text></g><g class="tick" transform="translate(0,158.00000000000003)" style="opacity: 1;"><line x2="-470" y2="0"></line><text dy=".32em" x="3" y="0" style="text-anchor: start;">70</text></g><g class="tick" transform="translate(0,111.99999999999997)" style="opacity: 1;"><line x2="-470" y2="0"></line><text dy=".32em" x="3" y="0" style="text-anchor: start;">80</text></g><g class="tick" transform="translate(0,65.99999999999999)" style="opacity: 1;"><line x2="-470" y2="0"></line><text dy=".32em" x="3" y="0" style="text-anchor: start;">90</text></g><g class="tick" transform="translate(0,20)" style="opacity: 1;"><line x2="-470" y2="0"></line><text dy=".32em" x="3" y="0" style="text-anchor: start;">100</text></g><path class="domain" d="M-470,20H0V480H-470"></path></g><g transform="translate(0,480)" id="xAxisG"><g class="tick" transform="translate(20,0)" style="opacity: 1;"><line y2="-470" x2="0"></line><text dy=".71em" y="3" x="0" style="text-anchor: middle;">1</text></g><g class="tick" transform="translate(84.28571428571428,0)" style="opacity: 1;"><line y2="-470" x2="0"></line><text dy=".71em" y="3" x="0" style="text-anchor: middle;">2</text></g><g class="tick" transform="translate(148.57142857142856,0)" style="opacity: 1;"><line y2="-470" x2="0"></line><text dy=".71em" y="3" x="0" style="text-anchor: middle;">3</text></g><g class="tick" transform="translate(212.85714285714283,0)" style="opacity: 1;"><line y2="-470" x2="0"></line><text dy=".71em" y="3" x="0" style="text-anchor: middle;">4</text></g><g class="tick" transform="translate(277.1428571428571,0)" style="opacity: 1;"><line y2="-470" x2="0"></line><text dy=".71em" y="3" x="0" style="text-anchor: middle;">5</text></g><g class="tick" transform="translate(341.42857142857144,0)" style="opacity: 1;"><line y2="-470" x2="0"></line><text dy=".71em" y="3" x="0" style="text-anchor: middle;">6</text></g><g class="tick" transform="translate(405.71428571428567,0)" style="opacity: 1;"><line y2="-470" x2="0"></line><text dy=".71em" y="3" x="0" style="text-anchor: middle;">7</text></g><path class="domain" d="M20,-470V0H470V-470"></path></g><g class="box" fill="white" transform="translate(20,328.2)"><line class="range" x1="0" x2="0" y1="-147.2" y2="87.40000000000003" style="stroke: red; stroke-width: 4px;"></line><line class="max" x1="-10" x2="10" y1="-147.2" y2="-147.2" style="stroke: green; stroke-width: 4px;"></line><line class="min" x1="-10" x2="10" y1="87.40000000000003" y2="87.40000000000003" style="stroke: yellow; stroke-width: 4px;"></line><rect class="range" width="20" x="-10" y="-9.199999999999989" height="69" style="fill: white; stroke: blue; stroke-width: 2px;"></rect><line x1="-10" x2="10" y1="0" y2="0" style="stroke: darkgray; stroke-width: 4px;"></line></g><g class="box" fill="white" transform="translate(84.28571428571428,365)"><line class="range" x1="0" x2="0" y1="-220.79999999999998" y2="-124.20000000000002" style="stroke: red; stroke-width: 4px;"></line><line class="max" x1="-10" x2="10" y1="-220.79999999999998" y2="-220.79999999999998" style="stroke: green; stroke-width: 4px;"></line><line class="min" x1="-10" x2="10" y1="-124.20000000000002" y2="-124.20000000000002" style="stroke: yellow; stroke-width: 4px;"></line><rect class="range" width="20" x="-10" y="-345" height="345" style="fill: white; stroke: blue; stroke-width: 2px;"></rect><line x1="-10" x2="10" y1="0" y2="0" style="stroke: darkgray; stroke-width: 4px;"></line></g><g class="box" fill="white" transform="translate(148.57142857142856,365)"><line class="range" x1="0" x2="0" y1="-69" y2="46" style="stroke: red; stroke-width: 4px;"></line><line class="max" x1="-10" x2="10" y1="-69" y2="-69" style="stroke: green; stroke-width: 4px;"></line><line class="min" x1="-10" x2="10" y1="46" y2="46" style="stroke: yellow; stroke-width: 4px;"></line><rect class="range" width="20" x="-10" y="-13.800000000000011" height="50.599999999999966" style="fill: white; stroke: blue; stroke-width: 2px;"></rect><line x1="-10" x2="10" y1="0" y2="0" style="stroke: darkgray; stroke-width: 4px;"></line></g><g class="box" fill="white" transform="translate(212.85714285714283,328.2)"><line class="range" x1="0" x2="0" y1="-101.20000000000002" y2="69.00000000000006" style="stroke: red; stroke-width: 4px;"></line><line class="max" x1="-10" x2="10" y1="-101.20000000000002" y2="-101.20000000000002" style="stroke: green; stroke-width: 4px;"></line><line class="min" x1="-10" x2="10" y1="69.00000000000006" y2="69.00000000000006" style="stroke: yellow; stroke-width: 4px;"></line><rect class="range" width="20" x="-10" y="-41.39999999999998" height="64.39999999999998" style="fill: white; stroke: blue; stroke-width: 2px;"></rect><line x1="-10" x2="10" y1="0" y2="0" style="stroke: darkgray; stroke-width: 4px;"></line></g><g class="box" fill="white" transform="translate(277.1428571428571,319)"><line class="range" x1="0" x2="0" y1="-142.60000000000002" y2="96.60000000000002" style="stroke: red; stroke-width: 4px;"></line><line class="max" x1="-10" x2="10" y1="-142.60000000000002" y2="-142.60000000000002" style="stroke: green; stroke-width: 4px;"></line><line class="min" x1="-10" x2="10" y1="96.60000000000002" y2="96.60000000000002" style="stroke: yellow; stroke-width: 4px;"></line><rect class="range" width="20" x="-10" y="-46" height="105.80000000000001" style="fill: white; stroke: blue; stroke-width: 2px;"></rect><line x1="-10" x2="10" y1="0" y2="0" style="stroke: darkgray; stroke-width: 4px;"></line></g><g class="box" fill="white" transform="translate(341.42857142857144,323.59999999999997)"><line class="range" x1="0" x2="0" y1="-165.59999999999994" y2="55.200000000000045" style="stroke: red; stroke-width: 4px;"></line><line class="max" x1="-10" x2="10" y1="-165.59999999999994" y2="-165.59999999999994" style="stroke: green; stroke-width: 4px;"></line><line class="min" x1="-10" x2="10" y1="55.200000000000045" y2="55.200000000000045" style="stroke: yellow; stroke-width: 4px;"></line><rect class="range" width="20" x="-10" y="-36.799999999999955" height="64.39999999999998" style="fill: white; stroke: blue; stroke-width: 2px;"></rect><line x1="-10" x2="10" y1="0" y2="0" style="stroke: darkgray; stroke-width: 4px;"></line></g><g class="box" fill="white" transform="translate(405.71428571428567,328.2)"><line class="range" x1="0" x2="0" y1="-147.2" y2="87.40000000000003" style="stroke: red; stroke-width: 4px;"></line><line class="max" x1="-10" x2="10" y1="-147.2" y2="-147.2" style="stroke: green; stroke-width: 4px;"></line><line class="min" x1="-10" x2="10" y1="87.40000000000003" y2="87.40000000000003" style="stroke: yellow; stroke-width: 4px;"></line><rect class="range" width="20" x="-10" y="-78.19999999999999" height="92" style="fill: white; stroke: blue; stroke-width: 2px;"></rect><line x1="-10" x2="10" y1="0" y2="0" style="stroke: darkgray; stroke-width: 4px;"></line></g></svg></div>
+	<div id="d3_div3"><svg width="1060" height="500"><g id="yAxisG"><g class="tick" transform="translate(0,480)" style="opacity: 1;"><line x2="480" y2="0"></line><text dy=".32em" x="483" y="0" style="text-anchor: start;">0</text></g><g class="tick" transform="translate(0,414.2857142857143)" style="opacity: 1;"><line x2="480" y2="0"></line><text dy=".32em" x="483" y="0" style="text-anchor: start;">5</text></g><g class="tick" transform="translate(0,348.5714285714286)" style="opacity: 1;"><line x2="480" y2="0"></line><text dy=".32em" x="483" y="0" style="text-anchor: start;">10</text></g><g class="tick" transform="translate(0,282.85714285714283)" style="opacity: 1;"><line x2="480" y2="0"></line><text dy=".32em" x="483" y="0" style="text-anchor: start;">15</text></g><g class="tick" transform="translate(0,217.14285714285714)" style="opacity: 1;"><line x2="480" y2="0"></line><text dy=".32em" x="483" y="0" style="text-anchor: start;">20</text></g><g class="tick" transform="translate(0,151.42857142857142)" style="opacity: 1;"><line x2="480" y2="0"></line><text dy=".32em" x="483" y="0" style="text-anchor: start;">25</text></g><g class="tick" transform="translate(0,85.71428571428574)" style="opacity: 1;"><line x2="480" y2="0"></line><text dy=".32em" x="483" y="0" style="text-anchor: start;">30</text></g><g class="tick" transform="translate(0,20)" style="opacity: 1;"><line x2="480" y2="0"></line><text dy=".32em" x="483" y="0" style="text-anchor: start;">35</text></g><path class="domain" d="M480,20H0V480H480"></path></g><circle class="tweets" r="5" cx="20" cy="466.85714285714283" style="fill: green;"></circle><circle class="tweets" r="5" cx="68.42105263157895" cy="401.1428571428571" style="fill: green;"></circle><circle class="tweets" r="5" cx="116.84210526315789" cy="440.57142857142856" style="fill: green;"></circle><circle class="tweets" r="5" cx="165.26315789473682" cy="414.2857142857143" style="fill: green;"></circle><circle class="tweets" r="5" cx="213.68421052631578" cy="348.5714285714286" style="fill: green;"></circle><circle class="tweets" r="5" cx="262.10526315789474" cy="427.4285714285714" style="fill: green;"></circle><circle class="tweets" r="5" cx="310.52631578947364" cy="440.57142857142856" style="fill: green;"></circle><circle class="tweets" r="5" cx="358.9473684210526" cy="414.2857142857143" style="fill: green;"></circle><circle class="tweets" r="5" cx="407.36842105263156" cy="466.85714285714283" style="fill: green;"></circle><circle class="tweets" r="5" cx="455.78947368421046" cy="427.4285714285714" style="fill: green;"></circle><circle class="retweets" r="5" cx="20" cy="453.7142857142857" style="fill: lightgray;"></circle><circle class="retweets" r="5" cx="68.42105263157895" cy="335.42857142857144" style="fill: lightgray;"></circle><circle class="retweets" r="5" cx="116.84210526315789" cy="480" style="fill: lightgray;"></circle><circle class="retweets" r="5" cx="165.26315789473682" cy="453.7142857142857" style="fill: lightgray;"></circle><circle class="retweets" r="5" cx="213.68421052631578" cy="98.85714285714283" style="fill: lightgray;"></circle><circle class="retweets" r="5" cx="262.10526315789474" cy="190.85714285714286" style="fill: lightgray;"></circle><circle class="retweets" r="5" cx="310.52631578947364" cy="296" style="fill: lightgray;"></circle><circle class="retweets" r="5" cx="358.9473684210526" cy="388" style="fill: lightgray;"></circle><circle class="retweets" r="5" cx="407.36842105263156" cy="20" style="fill: lightgray;"></circle><circle class="retweets" r="5" cx="455.78947368421046" cy="269.7142857142858" style="fill: lightgray;"></circle><circle class="favorites" r="5" cx="20" cy="414.2857142857143" style="fill: gray;"></circle><circle class="favorites" r="5" cx="68.42105263157895" cy="440.57142857142856" style="fill: gray;"></circle><circle class="favorites" r="5" cx="116.84210526315789" cy="466.85714285714283" style="fill: gray;"></circle><circle class="favorites" r="5" cx="165.26315789473682" cy="401.1428571428571" style="fill: gray;"></circle><circle class="favorites" r="5" cx="213.68421052631578" cy="269.7142857142858" style="fill: gray;"></circle><circle class="favorites" r="5" cx="262.10526315789474" cy="348.5714285714286" style="fill: gray;"></circle><circle class="favorites" r="5" cx="310.52631578947364" cy="466.85714285714283" style="fill: gray;"></circle><circle class="favorites" r="5" cx="358.9473684210526" cy="388" style="fill: gray;"></circle><circle class="favorites" r="5" cx="407.36842105263156" cy="190.85714285714286" style="fill: gray;"></circle><circle class="favorites" r="5" cx="455.78947368421046" cy="282.85714285714283" style="fill: gray;"></circle></svg></div>
+</div>
+<div class="portfolio">
+	<video src="/static/images/iphonex.MP4" controls="controls" __idm_id__="458466305">
+</video></div>
+
+<section class="portfolio">
+	<h1>Some of our work with Matplotlib</h1>
+
+	<!-- portfolio item 01 -->
+	<figure class="port-item">
+		<img src="./TonyJ._files/fig1.png" alt="portfolio item">
+		<figcaption class="port-desc">
+			<p>Time Series</p>
+			<a href="http://localhost:5000/" class="button button-accent button-small" style="background:#90b9d5; color:black">Time Series with Dango Library on the treasury bill rates of Ghana for 9 years</a>
+		</figcaption>
+	</figure>
+
+	<!-- portfolio item 02 -->
+	<figure class="port-item">
+		<img src="./TonyJ._files/pl.png" alt="portfolio item">
+		<figcaption class="port-desc">
+			<p>Project title</p>
+			<a href="http://localhost:5000/" class="button button-accent button-small">Project details</a>
+		</figcaption>
+	</figure>
+
+	<!-- portfolio item 03 -->
+	<figure class="port-item">
+		<img src="./TonyJ._files/pl1.png" alt="portfolio item">
+		<figcaption class="port-desc">
+			<p>Project title</p>
+			<a href="http://localhost:5000/" class="button button-accent button-small">Project details</a>
+		</figcaption>
+	</figure>
+
+	<!-- portfolio item 04 -->
+	<figure class="port-item">
+		<img src="./TonyJ._files/hl3.png" alt="portfolio item">
+		<figcaption class="port-desc">
+			<p>Project title</p>
+			<a href="http://localhost:5000/" class="button button-accent button-small">Project details</a>
+		</figcaption>
+	</figure>
+
+	<!-- portfolio item 05 -->
+	<figure class="port-item">
+		<img src="./TonyJ._files/bmh.png" alt="portfolio item">
+		<figcaption class="port-desc">
+			<p>Project title</p>
+			<a href="http://localhost:5000/" class="button button-accent button-small">Project details</a>
+		</figcaption>
+	</figure>
+
+	<!-- portfolio item 06 -->
+	<figure class="port-item">
+		<img src="./TonyJ._files/plot2grid.png" alt="portfolio item">
+		<figcaption class="port-desc">
+			<p>Project title</p>
+			<a href="http://localhost:5000/" class="button button-accent button-small">Project details</a>
+		</figcaption>
+	</figure>
+
+</section>
+
+
+<section class="cta parallax--bg" style="background-image: url(&quot;/static/images/cta.jpg&quot;); color: blue; background-position: center 2118.75px;">
+	<div class="containner">
+		<h1 class="title title-cta">Like what you see?
+			 <span>Then what are you waiting for?</span>
+		</h1>
+		<a href="http://localhost:5000/" class="button button-accent">Hire us</a>
+	</div>
+</section>
+<section class="container" style="background:#f2f2f2">
+	<h2>DJGRAPH PLOTS</h2>
+		<div class="col-3">
+			<!--<div  id="dygraph1" style="width:1200px; height:300px; margin:50px;"></div>-->
+			<div id="dygraph1" style="max-width:700px; height:300px; margin:50px; background: pink;"><div style="text-align: left; position: relative; width: 559px; height: 300px;"><canvas width="559" height="300" style="position: absolute; width: 559px; height: 300px;"></canvas><canvas width="559" height="300" style="position: absolute; width: 559px; height: 300px;"></canvas><input type="text" class="dygraph-roller" size="2" style="display: none; top: 255px; left: 57px;"><div class="dygraph-legend" style="left: 553px; top: 0px; display: none;"></div><div style="position: absolute; font-size: 14px; width: 50px; top: 260.1px; left: 3px; text-align: right;"><div class="dygraph-axis-label dygraph-axis-label-y">700</div></div><div style="position: absolute; font-size: 14px; width: 50px; top: 212.675px; left: 3px; text-align: right;"><div class="dygraph-axis-label dygraph-axis-label-y">750</div></div><div style="position: absolute; font-size: 14px; width: 50px; top: 165.249px; left: 3px; text-align: right;"><div class="dygraph-axis-label dygraph-axis-label-y">800</div></div><div style="position: absolute; font-size: 14px; width: 50px; top: 117.824px; left: 3px; text-align: right;"><div class="dygraph-axis-label dygraph-axis-label-y">850</div></div><div style="position: absolute; font-size: 14px; width: 50px; top: 70.3984px; left: 3px; text-align: right;"><div class="dygraph-axis-label dygraph-axis-label-y">900</div></div><div style="position: absolute; font-size: 14px; width: 50px; top: 22.9729px; left: 3px; text-align: right;"><div class="dygraph-axis-label dygraph-axis-label-y">950</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 283px; left: 130.838px;"><div class="dygraph-axis-label dygraph-axis-label-x">2010</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 283px; left: 392.898px;"><div class="dygraph-axis-label dygraph-axis-label-x">2020</div></div></div></div>
+		</div>
+		<div class="col-3">
+			<!--<div  id="dygraph1" style="width:1200px; height:300px; margin:50px;"></div>-->
+			<div id="dygraph2" style="max-width:700px; height:300px; margin:50px; background: pink;"><div style="text-align: left; position: relative; width: 567px; height: 300px;"><canvas width="567" height="300" style="position: absolute; width: 567px; height: 300px;"></canvas><canvas width="567" height="300" style="position: absolute; width: 567px; height: 300px;"></canvas><input type="text" class="dygraph-roller" size="2" style="display: none; top: 255px; left: 57px;"><div class="dygraph-legend" style="left: 561px; top: 0px; display: none;"></div><div style="position: absolute; font-size: 14px; width: 50px; top: 249.676px; left: 3px; text-align: right;"><div class="dygraph-axis-label dygraph-axis-label-y">-1</div></div><div style="position: absolute; font-size: 14px; width: 50px; top: 191.34px; left: 3px; text-align: right;"><div class="dygraph-axis-label dygraph-axis-label-y">-0.5</div></div><div style="position: absolute; font-size: 14px; width: 50px; top: 133.004px; left: 3px; text-align: right;"><div class="dygraph-axis-label dygraph-axis-label-y">0</div></div><div style="position: absolute; font-size: 14px; width: 50px; top: 74.6689px; left: 3px; text-align: right;"><div class="dygraph-axis-label dygraph-axis-label-y">0.5</div></div><div style="position: absolute; font-size: 14px; width: 50px; top: 16.3333px; left: 3px; text-align: right;"><div class="dygraph-axis-label dygraph-axis-label-y">1</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 283px; left: 26px;"><div class="dygraph-axis-label dygraph-axis-label-x">0</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 283px; left: 128.222px;"><div class="dygraph-axis-label dygraph-axis-label-x">2</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 283px; left: 230.444px;"><div class="dygraph-axis-label dygraph-axis-label-x">4</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 283px; left: 332.667px;"><div class="dygraph-axis-label dygraph-axis-label-x">6</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 283px; left: 434.889px;"><div class="dygraph-axis-label dygraph-axis-label-x">8</div></div></div></div>
+		</div>
+</section>
+<section class="portfolio" style="background:#f2f2f2">
+	<h2>DJGRAPH PLOTS WITH CSV</h2>
+	<div id="dygraphcsv" style="max-width:1200px; height:300px; margin:50px; background:pink;"><div style="text-align: left; position: relative; width: 1200px; height: 300px;"><canvas width="1200" height="300" style="position: absolute; width: 1200px; height: 300px;"></canvas><canvas width="1200" height="300" style="position: absolute; width: 1200px; height: 300px;"></canvas><input type="text" class="dygraph-roller" size="2" style="display: none; top: 255px; left: 57px;"><div style="position: absolute; font-size: 14px; width: 50px; top: 266px; left: 3px; text-align: right;"><div class="dygraph-axis-label dygraph-axis-label-y">0</div></div><div style="position: absolute; font-size: 14px; width: 50px; top: 207.302px; left: 3px; text-align: right;"><div class="dygraph-axis-label dygraph-axis-label-y">50</div></div><div style="position: absolute; font-size: 14px; width: 50px; top: 141.604px; left: 3px; text-align: right;"><div class="dygraph-axis-label dygraph-axis-label-y">100</div></div><div style="position: absolute; font-size: 14px; width: 50px; top: 75.9067px; left: 3px; text-align: right;"><div class="dygraph-axis-label dygraph-axis-label-y">150</div></div><div style="position: absolute; font-size: 14px; width: 50px; top: 10.2089px; left: 3px; text-align: right;"><div class="dygraph-axis-label dygraph-axis-label-y">200</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 283px; left: 49.4078px;"><div class="dygraph-axis-label dygraph-axis-label-x">Jul&nbsp;2012</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 283px; left: 147.295px;"><div class="dygraph-axis-label dygraph-axis-label-x">Jan&nbsp;2013</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 283px; left: 243.586px;"><div class="dygraph-axis-label dygraph-axis-label-x">Jul&nbsp;2013</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 283px; left: 341.473px;"><div class="dygraph-axis-label dygraph-axis-label-x">Jan&nbsp;2014</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 283px; left: 437.764px;"><div class="dygraph-axis-label dygraph-axis-label-x">Jul&nbsp;2014</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 283px; left: 535.651px;"><div class="dygraph-axis-label dygraph-axis-label-x">Jan&nbsp;2015</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 283px; left: 631.942px;"><div class="dygraph-axis-label dygraph-axis-label-x">Jul&nbsp;2015</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 283px; left: 729.829px;"><div class="dygraph-axis-label dygraph-axis-label-x">Jan&nbsp;2016</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 283px; left: 826.652px;"><div class="dygraph-axis-label dygraph-axis-label-x">Jul&nbsp;2016</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 283px; left: 924.539px;"><div class="dygraph-axis-label dygraph-axis-label-x">Jan&nbsp;2017</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 283px; left: 1020.83px;"><div class="dygraph-axis-label dygraph-axis-label-x">Jul&nbsp;2017</div></div><div style="position: absolute; font-size: 14px; width: 60px; text-align: center; top: 283px; left: 1118.72px;"><div class="dygraph-axis-label dygraph-axis-label-x">Jan&nbsp;2018</div></div></div></div>
+	<div id="dygraph2label" class="dyStatsLegend" style="display: none;"></div>
+</section>
+<footer style="background:#90b9d5">
+	<div class="containner">
+		<div class="col-3">
+			<h2>TonyJ</h2>
+			<p>Thank You for visiting my Site</p>
+		</div>
+
+		<div class="col-3">
+			<ul class="unstyled-list">
+				<li><span class="glyphicon glyphicon-globe" aria-hidden="true"></span><strong>Contact Us</strong></li>
+				<li>---------------------------------------- </li>
+				<li><em>Email:</em>tonyankomah1@gmail.com</li>
+				<li><i>P. O. Box 237</i>,Goaso, Brong Ahafo </li>
+				<li>0540731665 </li>
+				<li>---------------------------------------- </li>
+				<li>Thank You for calling</li>
+			</ul>
+		</div>
+	</div>
+</footer>
+
+<script type="text/javascript">
+ /* BEGIN OF D3 */
+ /*
+var barScale = d3.scale.linear().domain([0,400]).range([0,400])
+
+d3.select("svg")
+	.selectAll("rect")
+	.data([15, 50, 22, 8, 100, 10, 300,120,75,199,255,305,14])
+	.enter()
+	.append("rect")
+	.attr("width", 50)
+	.attr("height", 0)
+	.style("fill", "blue")
+	.style("stroke", "red")
+	.style("stroke-width", "5px")
+	.style("opacity", .25)
+	.attr("x", function(d,i) {return i * 50 +5})
+	.attr("y", -400);
+
+
+d3.selectAll("rect").transition().delay(function(d) {return d;}).attr("height", function(d) {return barScale(d);}).attr("y", function(d) {return 400 - barScale(d);});
+ */
+/*
+d3.csv("/static/doc/cities.csv",function(error,data) {dataViz(data);});
+
+function dataViz(incomingData) {
+	var maxPopulation = d3.max(incomingData, function(d) {return parseInt(d.population);});
+
+	var yScale = d3.scale.linear().domain([0,maxPopulation]).range([0,460]);
+
+
+	d3.select("svg")
+		.selectAll("rect")
+		.data(incomingData)
+		.enter()
+		.append("rect")
+		.attr("width", 50)
+		.attr("height", function(d) {return yScale(parseInt(d.population));})
+		.attr("x", function(d,i) {return i * 60;})
+		.attr("y", function(d) {return 480 - yScale(parseInt(d.population));})
+		.style("fill", "blue")
+		.style("stroke", "red")
+		.style("stroke-width", "1px")
+		.style("opacity", .25);
+
+}
+*/
+var json_svg = d3.select("#d3_div1").append("svg").attr("width",1000).attr("height",500);
+
+d3.json("/static/doc/tweets.json",function(error,data) {dataViz(data.tweets)});
+
+function dataViz(incomingData) {
+	var nestedTweets = d3.nest()
+		.key(function (el) {return el.user;})
+		.entries(incomingData);
+
+nestedTweets.forEach(function (el) {
+		el.numTweets = el.values.length;
+		})
+	var maxTweets = d3.max(nestedTweets, function(el) {return el.numTweets;});
+
+	var yScale = d3.scale.linear().domain([0,maxTweets]).range([0,400]);
+
+	json_svg.selectAll("rect")
+		.data(nestedTweets)
+		.enter()
+		.append("rect")
+		.attr("width", 50)
+		.attr("height", function(d) {return yScale(d.numTweets);})
+		.attr("x", function(d,i) {return i * 60 + 20;})
+		.attr("y", function(d) {return 450 - yScale(d.numTweets);})
+		.style("fill", "blue")
+		.style("stroke", "red")
+		.style("stroke-width", "1px").style("opacity", .25);
+
+	incomingData.forEach(function (el) {
+		el.impact = el.favorites.length + el.retweets.length;
+		el.tweetTime = new Date(el.timestamp);
+	})
+	var maxImpact = d3.max(incomingData, function(el) {return el.impact;});
+	var startEnd = d3.extent(incomingData, function(el) {return el.tweetTime;});
+
+	var timeRamp = d3.time.scale().domain(startEnd).range([20,480]);
+	var yScale1 = d3.scale.linear().domain([0,maxImpact]).range([0,460]);
+	var radiusScale = d3.scale.linear().domain([0,maxImpact]).range([1,20]);
+	var colorScale = d3.scale.linear().domain([0,maxImpact]).range(["white","#990000"]);
+
+	json_svg.selectAll("circle")
+		.data(incomingData)
+		.enter()
+		.append("circle")
+		.attr("r", function(d) {return radiusScale(d.impact);})
+		.attr("cx", function(d,i) {return 500+timeRamp(d.tweetTime);})
+		.attr("cy", function(d) {return 480 - yScale1(d.impact);})
+		.style("fill", function(d) {return colorScale(d.impact);})
+		.style("stroke", "black")
+		.style("stroke-width", "1px");
+
+	json_svg.append("line")
+		.attr("x1", 400)
+		.attr("y1", 0)
+		.attr("x2",400)
+		.attr("y2",600)
+		.style("stroke", "lightgray")
+		.style("stroke-width","5px");
+}
+
+
+var box_canvas = d3.select("#d3_div2").append("svg").attr("width",1060).attr("height",500);
+
+d3.select("#xAxisG").style("fill", "yellow");
+
+d3.csv("/static/doc/boxplot.csv", scatterplot)
+function scatterplot(data) {
+	xScale = d3.scale.linear().domain([1,8]).range([20,470]);
+	yScale = d3.scale.linear().domain([0,100]).range([480,20]);
+
+	yAxis = d3.svg.axis()
+		.scale(yScale)
+		.orient("right")
+		.ticks(8)
+		.tickSize(-470);
+
+	box_canvas.append("g")
+		.attr("transform", "translate(470,0)")
+		.attr("id", "yAxisG")
+		.call(yAxis);
+
+	xAxis = d3.svg.axis()
+		.scale(xScale)
+		.orient("bottom")
+		.tickSize(-470)
+		.tickValues([1,2,3,4,5,6,7]);
+
+	box_canvas.append("g")
+		.attr("transform", "translate(0,480)")
+		.attr("id", "xAxisG")
+		.call(xAxis);
+
+
+	box_canvas.selectAll("g.box")
+		.data(data).enter()
+		.append("g")
+		.attr("class", "box")
+		.attr("fill","white")
+		.attr("transform", function(d) {
+			return "translate(" + xScale(d.day) +"," + yScale(d.median) + ")";
+		}).each(function(d,i) {
+				d3.select(this)
+				.append("line")
+				.attr("class", "range")
+				.attr("x1", 0)
+				.attr("x2", 0)
+				.attr("y1", yScale(d.max) - yScale(d.median))
+				.attr("y2", yScale(d.min) - yScale(d.median))
+				.style("stroke", "red")
+				.style("stroke-width", "4px");
+
+				d3.select(this)
+					.append("line")
+					.attr("class", "max")
+					.attr("x1", -10)
+					.attr("x2", 10)
+					.attr("y1", yScale(d.max) - yScale(d.median))
+					.attr("y2", yScale(d.max) - yScale(d.median))
+					.style("stroke", "green")
+					.style("stroke-width", "4px");
+
+				d3.select(this)
+					.append("line")
+					.attr("class", "min")
+					.attr("x1", -10)
+					.attr("x2", 10)
+					.attr("y1", yScale(d.min) - yScale(d.median))
+					.attr("y2", yScale(d.min) - yScale(d.median))
+					.style("stroke", "yellow")
+					.style("stroke-width", "4px");
+
+				d3.select(this)
+					.append("rect")
+					.attr("class", "range")
+					.attr("width", 20)
+					.attr("x", -10)
+					.attr("y", yScale(d.q3) - yScale(d.median))
+					.attr("height", yScale(d.q1) - yScale(d.q3))
+					.style("fill", "white")
+					.style("stroke", "blue")
+					.style("stroke-width", "2px");
+
+				d3.select(this)
+					.append("line")
+					.attr("x1", -10)
+					.attr("x2", 10)
+					.attr("y1", 0)
+					.attr("y2", 0)
+					.style("stroke", "darkgray")
+					.style("stroke-width", "4px");
+
+
+		});
+
+	}
+
+
+var line_canvas = d3.select("#d3_div3").append("svg").attr("width",1060).attr("height",500);
+
+d3.csv("/static/doc/tweetdata.csv", lineChart);
+	function lineChart(data) {
+	xScale = d3.scale.linear().domain([1,10.5]).range([20,480]);
+	yScale = d3.scale.linear().domain([0,35]).range([480,20]);
+
+	xAxis = d3.svg.axis()
+		.scale(xScale)
+		.orient("bottom")
+		.tickSize(480)
+		.tickValues([1,2,3,4,5,6,7,8,9,10]);
+
+	d3.select("svg").append("g").attr("id", "xAxisG").call(xAxis);
+
+	yAxis = d3.svg.axis()
+		.scale(yScale)
+		.orient("right")
+		.ticks(10)
+		.tickSize(480);
+
+	line_canvas.append("g").attr("id", "yAxisG").call(yAxis);
+
+	line_canvas.selectAll("circle.tweets")
+		.data(data)
+		.enter()
+		.append("circle")
+		.attr("class", "tweets")
+		.attr("r", 5)
+		.attr("cx", function(d) {return xScale(d.day)})
+		.attr("cy", function(d) {return yScale(d.tweets)})
+		.style("fill", "green");
+
+	line_canvas.selectAll("circle.retweets")
+		.data(data)
+		.enter()
+		.append("circle")
+		.attr("class", "retweets")
+		.attr("r", 5)
+		.attr("cx", function(d) {return xScale(d.day)})
+		.attr("cy", function(d) {return yScale(d.retweets)})
+		.style("fill", "lightgray");
+
+	line_canvas.selectAll("circle.favorites")
+		.data(data)
+		.enter()
+		.append("circle")
+		.attr("class", "favorites")
+		.attr("r", 5)
+		.attr("cx", function(d) {return xScale(d.day)})
+		.attr("cy", function(d) {return yScale(d.favorites)})
+		.style("fill", "gray");
+}
+ /* END OF D3 */
+
+
+/* DYGRAPH CHARTS */
+
+var holder = [];
+for (var i=0; i<100; i++){
+holder.push([i/10, Math.sin(i/10), Math.cos(i/10)]);
+}
+
+	graph = new Dygraph(
+	document.getElementById("dygraph1"),
+	"Year,Fatalities\n"+
+	"2006-01-01,880\n"+
+	"2007-01-01,957\n"+
+	"2008-01-01,864\n"+
+	"2009-01-01,737\n"+
+	"2010-01-01,816\n"+
+	"2011-01-01,811\n"+
+	"2012-01-01,748\n"+
+	"2013-01-01,737\n"+
+	"2014-01-01,711\n"+
+	"2015-01-01,714\n"+
+	"2016-01-01,880\n"+
+	"2017-01-01,957\n"+
+	"2018-01-01,864\n"+
+	"2019-01-01,737\n"+
+	"2020-01-01,816\n"+
+	"2021-01-01,811\n"+
+	"2022-01-01,748\n"+
+	"2023-01-01,737\n"+
+	"2024-01-01,711\n"+
+	"2025-01-01,714\n"
+	);
+	g = new Dygraph(
+
+	document.getElementById("dygraph2"),
+	holder
+	);
+
+	gph = new Dygraph(
+
+	document.getElementById("dygraphcsv"),
+	"/static/doc/FB.csv",
+	{
+	 labelsDiv: 'dygraph2label'
+	}
+	);
+
+/*	function multiColumnBarPlotter(e){
+		if(e.seriesIndex !== 0) return;
+		var g = e.dygraph;
+		var ctx = e.drawingContext;
+		var sets = e.allSeriesPoints;
+		var y_bottom = e.dygraph.toDomYCoord(0);
+		var min_sep = Infinity;
+		for (var j = 0; j < sets.length; j++){
+			var points = sets[j];
+			for (var i = 1; i < points.length; i++){
+				var sep = points[i].canvasx - points[i-1].canvasx;
+				if (sep < min_sep) min_sep = sep;
+				}
+			}
+		var bar_width = Math.floor(2.0/3 * min_sep);
+		var fillColors = [];
+		var strokeColors = g.getColors();
+		for (var i = 0; i < strokeColors.length; i++) {
+			fillColors.push(darken
+	}
+*/
+</script>
+
+<script src="./TonyJ._files/jquery.min.js.download"></script>
+<script src="./TonyJ._files/bootstrap.min.js.download"></script>
+
+		<script src="./TonyJ._files/parallax.js.download"></script>
+
+</body></html>
